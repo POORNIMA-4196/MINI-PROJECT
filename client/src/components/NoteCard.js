@@ -1,12 +1,12 @@
 import React from 'react';
-import './NoteCard.css';
+import './NoteCard.css'; // ✅ This imports your styling
 
 const NoteCard = ({ title, content, category }) => {
   return (
     <div className="note-card">
       <h3>{title}</h3>
       <p>{content}</p>
-      <small>{category}</small>
+      <span className="category">{category}</span>
     </div>
   );
 };
