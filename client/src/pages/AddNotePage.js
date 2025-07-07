@@ -1,4 +1,6 @@
 // src/pages/AddNotePage.js
+// test change for GitHub contributions
+
 import React, { useState } from 'react';
 import './AddNotePage.css';
 
