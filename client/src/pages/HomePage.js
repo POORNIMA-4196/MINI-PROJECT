@@ -1,5 +1,6 @@
 // src/pages/HomePage.js
 import React from 'react';
+import './HomePage.css';
 import NoteCard from '../components/NoteCard';
 import Header from '../components/Header';
 import CategoryList from '../components/CategoryList';

@@ -1,8 +1,14 @@
 import React from 'react';
+import LoginPage from './pages/LoginPage';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import AddNotePage from './pages/AddNotePage';
+
+// Inside <Routes>
+<Route path="/login" element={<LoginPage />} />
+
+
 
 function App() {
   return (

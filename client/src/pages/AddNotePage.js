@@ -1,5 +1,6 @@
 // src/pages/AddNotePage.js
 import React, { useState } from 'react';
+import './AddNotePage.css';
 
 const AddNotePage = () => {
   const [title, setTitle] = useState('');
