@@ -1,5 +1,6 @@
 import React from 'react';
 import LoginPage from './pages/LoginPage';
+import PrivateRoute from './utils/PrivateRoute';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import HomePage from './pages/HomePage';
@@ -24,5 +25,25 @@ function App() {
     </Router>
   );
 }
+<Routes>
+  <Route
+    path="/"
+    element={
+      <PrivateRoute>
+        <HomePage />
+      </PrivateRoute>
+    }
+  />
+  <Route
+    path="/add"
+    element={
+      <PrivateRoute>
+        <AddNotePage />
+      </PrivateRoute>
+    }
+  />
+  <Route path="/login" element={<LoginPage />} />
+</Routes>
+
 
 export default App;
